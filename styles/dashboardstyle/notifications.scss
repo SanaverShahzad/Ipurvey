@@ -1,0 +1,46 @@
+.notifications-main {
+    & .typo-main {
+        font-family: "Poppins-Medium";
+        font-size: 20px;
+        color: #0A1433;
+        padding: 25px 0px;
+    }
+    & .title {
+        font-family: "Poppins-Medium";
+        font-size: 20px;
+        color: #0A1433;
+        padding-bottom: 20px;
+    }
+    & .typo {
+        font-family: "Poppins";
+        font-size: 16px;
+        color: #707070;
+    }
+    & .bg-box:hover{
+        background-color: #2E58A6;
+        transition: .3s ease-in-out;
+        & .MuiTypography-root{
+            color: #fff;
+        }
+    }
+    & .para {
+        font-family: "Poppins";
+        font-size: 16px;
+        color: #707070;
+    }
+    @media only screen and (max-width: 1440px) {
+        & .para {
+            font-size: 11px;
+        }
+        & .typo-main{
+            font-size: 13px;
+        }
+        & .typo{
+            font-size: 13px;
+        }
+        & .title {
+            font-size: 12px;
+         padding-bottom: 10px;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+// .partners-bg-img{
+//     background-image: url("../../public/images/partaners.png");
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//        width: 100%;
+// }
+.slider-setting{
+    .slick-dots{
+        bottom: 443px;
+        @media (max-width: 900px) {
+            bottom: 20px;
+        }
+        
+    }
+    .slick-dots li {
+        margin: 0px 11px;
+        background: transparent;
+       
+    }
+    .slick-dots li.slick-active button:before {
+        opacity:1;
+        color: white;
+        background: transparent;
+    }
+    .slick-dots li button:before {
+        font-family: 'slick';
+        font-size: 16px;
+        border: 1px solid white;
+        border-radius: 10px;
+        background: transparent;
+    }
+   
+}
+.instabg{
+    background: #7E2EA6;
+    border-color: 1px solid #0DAFDE;
+}
+.cookiesborder{
+    border: 2px solid white;
+}
+.travel-background{
+    @media (max-width: 500px) {
+        background-color: transparent;
+    }
+}

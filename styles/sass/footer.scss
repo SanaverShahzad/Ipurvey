@@ -1,0 +1,119 @@
+footer{
+    background-color: $default;
+    .custom-input{
+        input{
+            background-color: #fff;
+        }
+    }
+    textarea{
+            width: 100%;
+            padding-left: 22px;
+            padding-right: 22px;
+            border-radius: 5px;
+            background-color: #fff;
+            display: inline-block;
+            box-sizing: border-box;
+            padding-top: 10px;
+            font-size: 14px;
+            box-shadow: inset 1px 1px 3px #ccc;
+            color: #2E58A6;
+            &::-webkit-input-placeholder{
+                color: #2E58A6;
+                opacity: 0.5;
+            }
+            &::-moz-placeholder{
+                color: #2E58A6;
+                opacity: 0.5;
+            }
+            &:-ms-input-placeholder{
+                color: #2E58A6;
+                opacity: 0.5;
+            }
+            &::-ms-input-placeholder{
+                color: #2E58A6;
+                opacity: 0.5;
+            }
+            &::placeholder{
+                color: #2E58A6;
+                opacity: 0.5;
+            }
+            &:focus{
+                outline: none;
+                
+            }
+
+@include mediaMin(1500px){
+    font-size: 18px;
+}
+    }
+    .sub-footer{
+        background-color: #2E58A6;
+        .text-underline{
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100px;
+                height: 2px;
+                background-color: #fff;
+                bottom:-10px
+            }
+        }
+        img{
+            @include mediaMax (1500px){
+                width: 16px;
+            }  
+        }
+    }
+    .feedback{
+        background-color: #fff;
+        position: fixed;
+        z-index: 999;
+      
+        transition: all .3s;
+        .btn-feedback{
+        border-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        position: absolute;
+        right: -198px;
+        transform-origin: left;
+        transform: rotate(-90deg);
+        @include mediaMax (1500px){
+        right: -147px; 
+        bottom: -18px;
+        }
+        }
+       &.active{
+           left: 0;
+       }
+       .MuiSvgIcon-root{
+
+        @include mediaMin (1500px){
+            width: 1.8rem;
+            height: 1.8rem;
+        } 
+        @include mediaMin (275px){
+            width: 1.5rem;
+            height:1.5rem;
+        } 
+       }
+       @include mediaMin (200px){
+        max-width: calc(100% - 36px) ;
+        left: calc(-100% + 36px) ;
+        bottom:20px
+       }
+       @include mediaMin (475px){
+        max-width: 350px;
+        left: -350px;
+        bottom: 0;
+     }
+       @include mediaMin (1500px){
+       max-width: 500px;
+       left: -500px;
+       bottom: 50px;
+    }
+    
+    }
+   
+}

@@ -1,0 +1,197 @@
+@import './veriables';
+@import './navbar';
+@import './home';
+@import './getin';
+@import './careers';
+@import './footer';
+@import '../dashboardstyle/dHome.scss';
+@import '../dashboardstyle//activity.scss';
+@import '../dashboardstyle//notifications.scss';
+@import './partners.scss';
+
+
+@font-face {
+  src: url("#{$open-sans-font-path}Poppins-Regular.otf");
+  font-family: "Poppins";
+}
+@font-face {
+  src: url("#{$open-sans-font-path}Poppins-Medium.otf");
+  font-family: "Poppins-Medium";
+}
+@font-face {
+  src: url("#{$open-sans-font-path}Poppins-Thin.otf");
+  font-family: "Poppins-Thin";
+}
+@font-face {
+  src: url("#{$open-sans-font-path}Poppins-Bold.otf");
+  font-family: "Poppins-Bold";
+}
+@font-face {
+  src: url("#{$open-sans-font-path}Poppins-Black.otf");
+  font-family: "Poppins-Black";
+}
+@font-face {
+  src: url("#{$open-sans-font-path}Poppins-ExtraLight.otf");
+  font-family: "Poppins-ExtraLight";
+}
+@font-face {
+  src: url("#{$open-sans-font-path}Poppins-SemiBold.otf");
+  font-family: "Poppins-SemiBold";
+}
+
+@font-face {
+  src: url("#{$open-sans-font-path}Poppins-Light.otf");
+  font-family: "Poppins-Light.otf";
+}
+
+
+button:focus{
+  outline: none;
+  
+}
+a:hover{
+  text-decoration: none !important;
+}
+.font-f-bold{
+  font-family: "Poppins-Bold";
+}
+.font-f-regular{
+  font-family: "Poppins";
+}
+.font-f-medium{
+  font-family: "Poppins-Medium";
+}
+.font-f-semibold{
+  font-family: "Poppins-SemiBold";
+}
+.font-f-thin{
+  font-family: "Poppins-thin";
+}
+.font-f-black{
+  font-family: "Poppins-Black";
+}
+.font-f-samibold{
+  font-family: "Poppins-SemiBold";
+}
+.font-f-light{
+  font-family: "Poppins-Light.otf";
+}
+
+.border-primary{
+  border-color:  $primary !important;
+}
+.border-secondary{
+  border-color: $secondary !important;
+}
+.text-primary{
+  color:$primary !important;
+}
+.text-default{
+  color:$default !important;
+}
+.text-inherit{
+  color:$inherit !important;
+}
+.text-secondary{
+  color:$secondary !important;
+}
+.bgcolor{
+  background-color: $default !important;
+}
+.bgprimary{
+  background-color: $primary !important;
+}
+
+
+.fill-primary{
+  fill:$primary !important;
+}
+
+.fill-secondary{
+  fill:$secondary !important;
+}
+.bg-default{
+  background-color: $default !important;
+}
+body{
+  color:$primary;
+  font-family: "Poppins";
+}
+
+.custom-input{
+  display: block;
+  position: relative;
+  input{
+      width: 100%;
+      padding-left: 22px;
+      padding-right: 22px;
+      border-radius: 5px;
+      height: 40px;
+      font-size: 14px;
+      background-color: #F0F4FC;
+      display: inline-block;
+      box-sizing: border-box;
+      box-shadow: inset 1px 1px 3px #ccc;
+      color: $primary;
+      @include mediaMin(1500px){
+        font-size: 18px;
+        height: 55px;
+      }
+    
+  }
+  
+}
+.MuiContainer-maxWidthLg {
+@include mediaMin(1500px){
+  max-width: 1494px;
+}
+}
+.container{
+  @include mediaMin(0px){
+    max-width: 100%;
+  }
+  }
+.video{
+  position: relative;
+
+  .btn-play{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+    z-index: 999;
+    svg{
+      font-size: 70px;
+    }
+    
+  }
+}
+
+.chat-box{
+  position: fixed;
+  right: 40px;
+  bottom:30px;
+  z-index: 99;
+  }
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+
+  
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.table-responsive{
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.MuiDrawer-paper{
+  z-index: 9;
+}

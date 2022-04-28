@@ -1,0 +1,113 @@
+.dashboard-home{
+    & .typo{
+        font-family: "Poppins-SemiBold";
+        font-size: 18px;
+    }
+    & .font-family{
+        font-family: "Poppins-SemiBold";
+        font-size: 15px;
+        text-align: center;
+        color: #fff;
+        background-color: #2E58A6;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        padding:12px 0px;
+    }
+    & .boxshadow{
+        box-shadow:0px 3px 6px 6px rgba(0,0,0,0.16);
+    }
+    & .btnSee{
+        font-family: "Poppins-Medium";
+        color: #2E58A6;
+        font-size: 16px;
+        float: right;
+        margin-top: -30px;
+        margin-bottom: 10px;
+        @include mediaMax(992px){
+            margin-top: 0;
+        }
+    }
+    & .MuiTableCell-root {
+        border-bottom: none;
+        font-family: "Poppins";
+        font-size: 15px;
+        color: #707070;  
+        overflow-x: auto !important;
+    }
+    & .MuiTableCell-head{
+        font-family: "Poppins-Medium";
+        font-size: 16px;
+        color: #2E58A6;
+        border-bottom: none;
+        overflow-x: auto !important;
+    }
+    & .MuiTableRow-head{
+        border-radius: 10px;
+        box-shadow:0px 3px 6px 6px rgba(0,0,0,0.16);
+        overflow-x: auto !important;
+    }
+    & .MuiTableRow-root{
+        box-shadow:0px 3px 6px 6px rgba(0,0,0,0.16);
+        border-radius: 10px;
+        overflow-x: auto !important;
+    }
+    & .MuiTableRow-root:hover{
+        & .MuiTableCell-body{
+            color: #fff;
+            background-color: #2E58A6;
+            transition: .2s ease-in-out;
+            overflow-x: auto !important;
+        }
+        & .first-child{
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            overflow-x: auto !important;
+        }
+        & .last-child{
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            overflow-x: auto !important;
+        }
+    }
+   
+    & .booking-typo{
+        font-family: "Poppins";
+        font-size: 14px;
+        color: #2E58A6;
+    }
+    @media only screen and (max-width: 1440px) {
+        & .MuiTableCell-head{
+            font-size: 10px;
+        }
+        & .booking-typo{
+            font-size: 11px;
+        }
+        & .btnSee{
+            font-size: 10px;
+        }
+        & .MuiTableCell-root {
+            font-size: 10px;
+        }
+        & .typo{
+            font-size: 13px;
+        }
+        & .font-family{
+            font-size: 13px;        }
+      }
+      & .table-setting {
+        overflow-x: auto !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+        margin-top: 50px ;
+        padding: 10px;
+        margin: 10px;
+      }
+      
+   
+      
+}
+.minues-bg{
+    background: #D6DEEA;
+}
+
+

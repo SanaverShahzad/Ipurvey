@@ -1,0 +1,169 @@
+.wrapper{
+    background-image: url('/images/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 15rem;
+    position: relative;
+    overflow: hidden;
+    @include mediaMin(1500px){
+        padding-top: 158px;
+    }
+    .car {
+        position:absolute;
+        bottom:0;
+        z-index:10;
+    -moz-animation:myfirst 5s  linear infinite;
+    -webkit-animation:myfirst 5s  linear infinite;
+    } 
+    @-webkit-keyframes myfirst
+    {
+        0% {left:-20%;}
+        50% {left:50%;}
+        100% {left:100%;}
+    } 
+    .flight{
+        position:absolute;
+        bottom:0;
+        z-index: 0;
+    -moz-animation:landFlight 5s  linear infinite;
+    -webkit-animation:landFlight 5s  linear infinite;
+    }
+    @-webkit-keyframes landFlight {
+        
+        0% {
+          @include matrix(-200px,-70px, -10deg);
+        }
+       
+        100% {
+            @include matrix(1900px,-700px, -10deg);
+        }
+    }
+    
+}
+.module-box{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.16);
+    max-width: 536px;
+    position: relative;
+    z-index: 9;
+    .module-inner {
+    h5{
+        color: #0A1433;
+    }     
+}
+.main-tabs{
+    button{
+        box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+        text-transform: capitalize;
+        font-size: 15px;
+        color:#2E58A6;
+        width: 90px;
+        height: 90px;
+        border: 2px solid transparent;
+        @include mediaMin(1500px){
+        width: 110px;
+        height: 110px; 
+        }
+        svg{
+          fill: rgba(59, 130, 246, 0.5);
+        }
+        .active-tab{
+            position: absolute;
+            top: 7px;
+            right: 7px;
+        }
+    }
+    
+}
+}
+.why-ipurvey{
+position: relative;
+background-image: url("/images/world_map.png"), linear-gradient($default,$default);
+background-size: contain;
+background-position: top center;
+background-repeat: no-repeat;
+
+.why-ipurvey-content{
+    .box{
+        background-color: #fff;
+        display: inline-block;
+        box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+        width: 91px;
+    }
+}
+}
+.ipurvey-special{
+    background: $default;
+    .heading{
+        line-height: 1.7;
+    }
+    .content{
+
+    .box{
+        .title{
+            position: relative;
+         &::before{
+             content: "";
+             position: absolute;
+             left: 0;
+             bottom:-24px;
+            height: 4px;
+            background: #359980;
+            width: 30px;
+         }   
+        }
+        img{
+            min-height: 180px;
+        }
+    }
+    }
+}
+.delayed-flight{
+    .counter-text{
+  border-bottom: 5px solid $default;
+    }
+}
+.services{
+    background-image: linear-gradient($default,$default);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+    &::before{
+        content: '';
+        position: absolute;
+        background-image: url("/images/Mask Group 4.png");
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        z-index: -1;
+        left: 50%;
+        transform: translateX(-50%);
+        background-size: contain;
+        @include mediaMax(992px){
+            content: none;
+        }
+    }
+}
+.trusted-by{
+    .trust-bg{
+        background-image: url("/images/Mask Group 5.png");
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: center right;
+        background-repeat: no-repeat;
+    }
+}
+.ipurvey-cookie{
+    position: fixed;
+    top: 822px;
+    z-index: 1000;
+}
+.chatmessage{
+    background: #F0F4FC;
+}

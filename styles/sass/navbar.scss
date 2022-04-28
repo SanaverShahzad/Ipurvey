@@ -1,0 +1,114 @@
+.navbar{
+    header{
+        @include mediaMin(1500px){
+            height: 158px;
+        }
+     
+        box-shadow: 0px 3px 10px rgba(0,0,0,0.16);
+        z-index: 9999999999;
+        .logo{
+            @include mediaMin(1500px){
+            width: 128px;
+            }
+            @include mediaMin(992px){
+                width: 80px;
+                }
+        }
+        .mobile-logo{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top:3px
+        }
+        .MuiToolbar-regular{
+            height: 100%;
+        }
+        .main-menu{
+            li{
+                overflow: hidden;
+               & + li{
+                @include mediaMin(992px){
+                    margin-left: 30px;
+                }
+                    }
+               
+                   
+                button{
+                    font-family: "Poppins-Medium";
+                    text-transform: capitalize;
+                    
+                    &:hover{
+                        -webkit-text-stroke: .5px $primary;
+                        
+                    }
+                    @include mediaMin(1500px){
+                        font-size: 20px;
+                    }
+                }
+            }
+            
+        }
+        .account-buttons{
+            margin-left: auto;
+            button{
+            font-family: "Poppins-Medium";
+            text-transform: capitalize;
+            @include mediaMin(1500px){
+                font-size: 20px;
+            }
+            }
+        }
+        .login{ 
+            .btn-notification{
+                position: relative;
+                svg{
+                    fill:#7D86A2
+                }
+                i{
+                  color: $secondary;
+                  display: inline-block; 
+                  background-color: #fff;
+                  box-shadow: 0px 3px 10px rgba(0,0,0,0.16);
+                  font-family: "Poppins-Medium";
+                  font-size: 15px;
+                  position: absolute;
+                  padding:4px;
+                  padding-left: 5px;
+                  padding-right: 5px;
+                  border-radius: 50%;
+                  line-height: 80%;
+                  margin-left: 20px;
+                  margin-top: -17px;
+                   
+                }
+            }  
+            ul{
+                li:first-child {
+                    border-right:1px solid $primary;
+                    @include mediaMax(992px){
+                        border: none;
+                    }
+                }
+            }
+            .login-dropdown{
+                min-width:280px ;
+            }
+            .notifction-dropdown{
+                max-width:600px ;
+                width: 521px;
+                @include mediaMax(992px){
+                    width: 423px;
+                }
+            }
+            .MuiMenuItem-root{
+                white-space: normal;
+            }
+        }
+    }
+    
+}
+.MuiDrawer-paper{
+    top:48px;
+   
+    z-index: 99999999
+}

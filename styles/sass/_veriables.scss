@@ -1,0 +1,41 @@
+$primary : #2E58A6;
+$secondary : #0A1433;
+$default: #F0F4FC;
+$inherit: #707070;
+@mixin mediaMax ($width) {
+    @media screen and (max-width:$width){
+        @content;
+    }
+}
+@mixin mediaMin ($width) {
+    @media screen and (min-width:$width){
+        @content;
+    }
+}
+@mixin flex($align,$justify){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify
+};
+@mixin custom-scroll-bar() {
+    &::-webkit-scrollbar {
+      border-radius: 10px;
+      height: 10px;
+      width: 8px;
+      
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background: $default;
+      border-radius: 10px;
+    }
+  
+    &::-webkit-scrollbar-track {
+      border-radius: 10px;
+    }
+  }
+  @mixin matrix($x, $y, $angle){
+    transform: translate($x,$y) rotate($angle);
+  }
+  
+$open-sans-font-path: "../../src/assets/fonts/";
